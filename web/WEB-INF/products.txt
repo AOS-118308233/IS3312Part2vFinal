@@ -1,0 +1,24 @@
+1|Williams F1 Bear|24
+
+2|Baby Yoda|39
+
+5|Green Dinosaur|12
+
+4|Highland Cow|17
+
+5|Scooby-Doo|19
+
+6|Penguin|10
+
+7|Lobster|8
+
+8|Care Bear|22
+
+9|Djungelskog|26
+
+10|Ferrari F1 Bear|24
+
+11|Sid the Sloth| 11
+
+12|Winnie the Pooh|18
+
