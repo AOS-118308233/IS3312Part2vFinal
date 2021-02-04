@@ -71,96 +71,102 @@
                 </div>
             </div>
         </nav>
-        
+
         <br/>
         <br/>
         <br/>
 
         <!-- Content -->
         <div class="admin">
-            <h2 class="adminHome">Welcome to the Admin Home Page</h2>
-            <h4 class="adminHome"> Right now this page doesn't do much, but come back again soon to see the changes!</h4>
+            <h2 class="adminHome">Welcome to the Administration Home Page</h2>
+
             <hr>
-            <!-- I did an online course on Udemy.com about web dev (The Web Developer's Bootcamp) over the summer and the following code
-                has been taken from my work on that course and adjusted for this project 
-                    You can add a new task, delete a task using the trash icon and mark a task as done if you click on the item -->
 
-            <center>
-                <h2>Admin To-Do list : Add, Delete and mark jobs Done</h2>
-                <div id="container" class="adminList" style="width:400px; height:300px">
-                    <div class="toDo">
-                        <h1 class="list">Admin To Do</h1>
-                        <input type="text" placeholder="Add New To Do">
-                        <ul>
-                            <li id="toDoList"><span><i class="fa fa-trash"></i></span>Update User Details </li>
-                            <li id="toDoList"><span><i class="fa fa-trash"></i></span>View Reports</li>
-                            <li id="toDoList"><span><i class="fa fa-trash"></i></span>VAT Reduction on Products</li>
-                        </ul>
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-3">
+
+                        <h1 class="pt-4"> Admin Capabilities </h1>   
+
+                            <div class="list-group">
+                                <a href="productAdminServlet?action=listProducts" class="list-group-item">Product Administration</a>
+                                <a href="userAdminServlet?action=listUsers" class="list-group-item">User Administration</a>
+                            </div>
+
                     </div>
-                </div> 
-
-                <div class="container">
-
-                    <div class="row">
-
-                        <div class="col-lg-3">
-
-                            <h1 class="pt-4"> Administration Home </h3>   
-
-                                <div class="list-group">
-                                    <a href="productAdminServlet?action=listProducts" class="list-group-item">Product Administration</a>
-                                    <a href="userAdminServlet?action=listUsers" class="list-group-item">User Administration</a>
-                                </div>
-
-                        </div>
-                        <!-- /.col-lg-3 -->
+                    <!-- /.col-lg-3 -->
 
 
 
 
-                    </div><!-- comment -->
-                    <!-- /.row -->
+                </div><!-- comment -->
+                <!-- /.row -->
 
-                </div>
-                <!-- /.col-lg-9 -->
+            </div>
+            <!-- /.col-lg-9 -->
 
         </div>
         <!-- /.row -->
 
-   
-    <!-- /.container -->
 
-    <!--  <div class="container">
-          <h2>Revenue and Sales Reports</h2>
-              <div class="row">
+
+
+        <!-- I did an online course on Udemy.com about web dev (The Web Developer's Bootcamp) over the summer and the following code
+            has been taken from my work on that course and adjusted for this project 
+                You can add a new task, delete a task using the trash icon and mark a task as done if you click on the item -->
+
+    <center>
+        <h2>Admin To-Do list : Add, Delete and mark jobs Done</h2>
+        <div id="container" class="adminList" style="width:400px; height:300px">
+            <div class="toDo">
+                <h1 class="list">Admin To Do</h1>
+                <input type="text" placeholder="Add New To Do">
+                <ul>
+                    <li id="toDoList"><span><i class="fa fa-trash"></i></span>Update User Details </li>
+                    <li id="toDoList"><span><i class="fa fa-trash"></i></span>View Reports</li>
+                    <li id="toDoList"><span><i class="fa fa-trash"></i></span>VAT Reduction on Products</li>
+                </ul>
+            </div>
+        </div> 
+
+
+
+
+        <!-- /.container -->
+
+        <!--  <div class="container">
+              <h2>Revenue and Sales Reports</h2>
+                  <div class="row">
+                      <div class="column">
+                          <img src="resources/images/revenue.png" alt="Forest" style="width:100%">
+                      </div>
                   <div class="column">
-                      <img src="resources/images/revenue.png" alt="Forest" style="width:100%">
+                      <img src="resources/images/sales.png" alt="Mountains" style="width:100%">
                   </div>
-              <div class="column">
-                  <img src="resources/images/sales.png" alt="Mountains" style="width:100%">
               </div>
           </div>
-      </div>
-    
-      <div class="col-lg-3">
-  
-          <h1 class="my-4">Administrator Activities</h1>
-    <!-- This will be more useful in Part 2 where the admin can edit users, products etc, for now it's all dummy link 
-        <div class="list-group">
-            <a href="#" class="list-group-item">Create New User</a>
-            <a href="#" class="list-group-item">Update and Edit Current User Details</a>
-            <a href="#" class="list-group-item">View Products</a>
-            <a href="#" class="list-group-item">Update Product Details</a>
-            <a href="#" class="list-group-item">Generate Product Reports</a>
-            <a href="#" class="list-group-item">Generate Sales Reports</a>
-        </div>
-</div>
-</center> -->
+        
+          <div class="col-lg-3">
+      
+              <h1 class="my-4">Administrator Activities</h1>
+        <!-- This will be more useful in Part 2 where the admin can edit users, products etc, for now it's all dummy link 
+            <div class="list-group">
+                <a href="#" class="list-group-item">Create New User</a>
+                <a href="#" class="list-group-item">Update and Edit Current User Details</a>
+                <a href="#" class="list-group-item">View Products</a>
+                <a href="#" class="list-group-item">Update Product Details</a>
+                <a href="#" class="list-group-item">Generate Product Reports</a>
+                <a href="#" class="list-group-item">Generate Sales Reports</a>
+            </div>
+    </div>
+    </center> -->
 
 
 
 
-<script type="text/javascript" src="resources/JS/list.js"></script>
-</body>   
+        <script type="text/javascript" src="resources/JS/list.js"></script>
+    </body>   
 
 </html>

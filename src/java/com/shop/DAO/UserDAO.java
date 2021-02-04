@@ -139,13 +139,11 @@ public class UserDAO {
     }
 
     public void insertUser(User newUser) {
-
         DBManager dmbgr = new DBManager();
         Connection con = dmbgr.getConnection();
         Statement stmt = null;
 
         try {
-
             stmt = con.createStatement();
             String sql = String.format("INSERT INTO USERDATA(EMAIL,PASSWORD,FIRSTNAME,LASTNAME,USERTYPE) "
                     + "VALUES('%s','%s','%s','%s','%s')", newUser.getEmail(), newUser.getPassword(), newUser.getFirstName(), newUser.getLastName(), newUser.getUserType());

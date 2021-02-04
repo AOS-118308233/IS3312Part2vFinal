@@ -90,7 +90,7 @@
 
             <div class="col-lg-12">
 
-                <h1 class="my-4">Edit User</h1>
+                <h1 class="my-4">Edit Product</h1>
 
                 <div class="row">
                     <c:url value="/productAdminServlet" var="updateProductUrl">

@@ -34,24 +34,21 @@ public class userAdminServlet extends HttpServlet {
             throws ServletException, IOException {
         
         String action = request.getParameter("action");
+        
         UserManager uServ = new UserManager();
         
         String url = null;
-        String query = null; 
-        
+       
         if (action == null)
             request.getRequestDispatcher("/userAdmin.jsp").forward(request, response);
         
-        // Code from https://stackoverflow.com/questions/13108960/java-add-all-table-data-into-list
+        
         if (action.equals("listUsers")){
             ArrayList<User> users = uServ.getAllUsers();
             request.setAttribute("users", users);
             request.getRequestDispatcher("/userAdmin.jsp").forward(request, response);
-            
         }
             
-        
-        
         if (action.equals("add")){
             request.getRequestDispatcher("/addUser.jsp").forward(request, response);
         }

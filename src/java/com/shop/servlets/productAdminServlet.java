@@ -70,14 +70,14 @@ public class productAdminServlet extends HttpServlet {
             request.getRequestDispatcher("/productAdmin.jsp").forward(request, response);
         }
 
-        if (action.equals("updateProduct")) {
+        if (action.equals("updateCompleteProduct")) {
             updateProduct(request, response);
             ArrayList<Product> products = pMan.getAllProducts();
             request.setAttribute("products", products);
             request.getRequestDispatcher("/productAdmin.jsp").forward(request, response);
         }
         if (action.equals("edit")) {
-            String productCode = request.getParameter("code");
+            String productCode = request.getParameter("productCode");
 
             if (productCode == null) {
                 request.getRequestDispatcher("/shop.jsp").forward(request, response);
