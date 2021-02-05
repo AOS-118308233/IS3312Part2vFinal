@@ -66,7 +66,7 @@ public class ProductIO {
                 Product p = new Product();
                 p.setProductCode(productCode);
                 p.setProductDescription(productDescription);
-                p.setPrice.(price);
+                p.setPrice(price);
                 products.add(p);
                 line = in.readLine();
             }

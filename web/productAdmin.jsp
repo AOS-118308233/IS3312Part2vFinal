@@ -47,7 +47,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="shop.jsp">Shop</a>
+                            <a class="nav-link" href="./ProductServlet">Shop</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="aboutUs.jsp">About Us</a>
@@ -116,7 +116,7 @@
                                         <td>${product.price}</td>
                                         <td>${product.colour}</td>
                                         <td>${product.animalType}</td>
-                                        <td>${product.productImage}</td>
+                                        <td><img class="card-img-top" src="resources/images/${topProduct.productImage}" alt=""></td>
                                         <td>${category}</td>
 
                                         <td><a href="${editProductUrl}"> Edit</a> <a href="${deleteProductUrl}">Delete</a></td>
